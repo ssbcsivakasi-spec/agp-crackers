@@ -7,7 +7,7 @@
     <meta name="description" content="Review your cart, enter your delivery details and download an order bill to confirm on WhatsApp." />
     <meta name="robots" content="noindex, follow" />
     <meta name="theme-color" content="#7a1f2b" />
-    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/logo-badge.jpg" type="image/jpeg" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -30,7 +30,7 @@
             <a class="btn btn-primary" href="products.html">Browse Products</a>
           </div>
 
-          <div id="cartContent" class="grid g-2" style="grid-template-columns:1.6fr 1fr;gap:36px;align-items:flex-start">
+          <div id="cartContent" class="grid cart-content">
             <div>
               <div id="cartLines"></div>
             </div>
@@ -84,6 +84,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
     <script src="js/data.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/app.js"></script>
@@ -102,7 +103,7 @@
             '<img src="' + l.product.image + '" alt="">' +
             '<div><p class="nm">' + SZ.escapeHtml(l.product.name) + '</p>' +
             '<p class="meta">' + SZ.escapeHtml(l.product.categoryName) + ' · ' + SZ.money(l.product.price) + ' / ' + SZ.escapeHtml(l.product.per) + '</p>' +
-            '<button class="remove-btn" data-remove="' + l.product.id + '">Remove</button></div>' +
+            '<button class="remove-btn" type="button" data-remove="' + l.product.id + '" aria-label="Remove ' + SZ.escapeHtml(l.product.name) + ' from cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg> Remove</button></div>' +
             '<div class="qty-stepper"><button type="button" data-step="-1">−</button><input type="number" value="' + l.qty + '" min="1" data-qty="' + l.product.id + '"><button type="button" data-step="1">+</button></div>' +
             '<span class="line-total">' + SZ.money(l.lineTotal) + '</span>' +
             '</div>';
@@ -112,7 +113,13 @@
         document.getElementById('sumTotal').textContent = SZ.money(t.subtotal);
 
         SZ.$$('[data-remove]').forEach(function (btn) {
-          btn.addEventListener('click', function () { SZ_CART.remove(btn.getAttribute('data-remove')); render(); });
+          btn.addEventListener('click', function () {
+            var line = btn.closest('.cart-line');
+            var name = line ? line.querySelector('.nm').textContent : 'this item';
+            SZ_CART.remove(btn.getAttribute('data-remove'));
+            SZ_CART.toast(name + ' removed from cart');
+            render();
+          });
         });
         SZ.$$('[data-step]').forEach(function (btn) {
           btn.addEventListener('click', function () {
@@ -145,80 +152,111 @@
 
       function money(n) { return 'Rs. ' + Math.round(n).toLocaleString('en-IN'); }
 
+      function numberToWords(num) {
+        var ones = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten',
+          'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen'];
+        var tens = ['', '', 'Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety'];
+        function twoDigits(n) {
+          if (n < 20) return ones[n];
+          return tens[Math.floor(n / 10)] + (n % 10 ? ' ' + ones[n % 10] : '');
+        }
+        function threeDigits(n) {
+          var h = Math.floor(n / 100), r = n % 100;
+          return (h ? ones[h] + ' Hundred' + (r ? ' ' : '') : '') + (r ? twoDigits(r) : '');
+        }
+        num = Math.round(num);
+        if (num === 0) return 'Zero';
+        var crore = Math.floor(num / 10000000); num %= 10000000;
+        var lakh = Math.floor(num / 100000); num %= 100000;
+        var thousand = Math.floor(num / 1000); num %= 1000;
+        var rest = num;
+        var parts = [];
+        if (crore) parts.push(threeDigits(crore) + ' Crore');
+        if (lakh) parts.push(threeDigits(lakh) + ' Lakh');
+        if (thousand) parts.push(threeDigits(thousand) + ' Thousand');
+        if (rest) parts.push(threeDigits(rest));
+        return parts.join(' ');
+      }
+
       function downloadBill(customer) {
         var lines = SZ_CART.lines();
         var t = SZ_CART.totals();
         var orderId = 'AGP-' + Date.now().toString().slice(-8);
         var jsPDF = window.jspdf.jsPDF;
         var doc = new jsPDF();
-        var y = 18;
+        var margin = 12;
+        var pageW = 210;
+        var y = 14;
 
-        doc.setFont(undefined, 'bold'); doc.setFontSize(18);
-        doc.text('AGP CRACKERS', 14, y);
-        doc.setFont(undefined, 'normal'); doc.setFontSize(9);
-        y += 7;
-        var addrLines = doc.splitTextToSize(SZ.ADDRESS, 130);
-        doc.text(addrLines, 14, y);
-        y += addrLines.length * 4.5;
-        doc.text('Phone: ' + SZ.PHONE + ' / ' + SZ.PHONE2, 14, y);
-        y += 10;
-
-        doc.setFont(undefined, 'bold'); doc.setFontSize(13);
-        doc.text('ORDER BILL', 14, y);
-        doc.setFont(undefined, 'normal'); doc.setFontSize(9);
-        doc.text('Order ID: ' + orderId, 140, y - 4);
-        doc.text('Date: ' + new Date().toLocaleDateString('en-IN'), 140, y + 1);
-        y += 10;
-
-        doc.setFont(undefined, 'bold');
-        doc.text('Bill To', 14, y);
-        doc.setFont(undefined, 'normal');
+        doc.setFont(undefined, 'bold'); doc.setFontSize(16);
+        doc.text('AGP CRACKERS', pageW / 2, y, { align: 'center' });
         y += 5;
-        doc.text('Name: ' + customer.name, 14, y); y += 5;
-        doc.text('Phone: ' + customer.phone, 14, y); y += 5;
-        var addrWrap = doc.splitTextToSize('Address: ' + customer.address, 180);
-        doc.text(addrWrap, 14, y);
-        y += addrWrap.length * 5 + 6;
-
-        doc.setDrawColor(200);
-        doc.line(14, y, 196, y);
-        y += 6;
-        doc.setFont(undefined, 'bold');
-        doc.text('#', 14, y);
-        doc.text('Item', 22, y);
-        doc.text('Qty', 130, y, { align: 'right' });
-        doc.text('Rate', 160, y, { align: 'right' });
-        doc.text('Amount', 196, y, { align: 'right' });
-        doc.setFont(undefined, 'normal');
+        doc.setFont(undefined, 'normal'); doc.setFontSize(8.5);
+        doc.text(SZ.ADDRESS, pageW / 2, y, { align: 'center' });
+        y += 4;
+        doc.text('Contact: ' + SZ.PHONE + ' / ' + SZ.PHONE2, pageW / 2, y, { align: 'center' });
         y += 3;
-        doc.line(14, y, 196, y);
+        doc.setDrawColor(120);
+        doc.line(margin, y, pageW - margin, y);
         y += 6;
 
-        lines.forEach(function (l, idx) {
-          if (y > 275) { doc.addPage(); y = 20; }
-          var nameLines = doc.splitTextToSize(l.product.name + ' (' + l.product.per + ' / ' + l.product.content + ')', 100);
-          doc.text(String(idx + 1), 14, y);
-          doc.text(nameLines, 22, y);
-          doc.text(String(l.qty), 130, y, { align: 'right' });
-          doc.text(String(l.product.price), 160, y, { align: 'right' });
-          doc.text(String(l.lineTotal), 196, y, { align: 'right' });
-          y += Math.max(nameLines.length * 5, 6);
+        doc.setFontSize(9);
+        doc.setFont(undefined, 'bold'); doc.text('Name', margin, y);
+        doc.setFont(undefined, 'normal'); doc.text(': ' + customer.name, margin + 14, y);
+        doc.setFont(undefined, 'bold'); doc.text('Estimate No', 140, y);
+        doc.setFont(undefined, 'normal'); doc.text(': ' + orderId, 168, y);
+        y += 5;
+        var addrWrap = doc.splitTextToSize(customer.address, 100);
+        doc.setFont(undefined, 'bold'); doc.text('Address', margin, y);
+        doc.setFont(undefined, 'normal'); doc.text(': ' + addrWrap[0], margin + 14, y);
+        doc.setFont(undefined, 'bold'); doc.text('Date', 140, y);
+        doc.setFont(undefined, 'normal'); doc.text(': ' + new Date().toLocaleDateString('en-IN'), 168, y);
+        y += 5;
+        for (var i = 1; i < addrWrap.length; i++) { doc.text(addrWrap[i], margin + 14, y); y += 5; }
+        doc.setFont(undefined, 'bold'); doc.text('Contact', margin, y);
+        doc.setFont(undefined, 'normal'); doc.text(': ' + customer.phone, margin + 14, y);
+        y += 4;
+
+        var body = lines.map(function (l, idx) {
+          return [
+            String(idx + 1),
+            l.product.name + ' (' + l.product.per + ' / ' + l.product.content + ')',
+            String(l.qty),
+            l.product.price.toFixed(2),
+            l.lineTotal.toFixed(2),
+          ];
         });
 
-        y += 2;
-        doc.line(14, y, 196, y);
-        y += 8;
-        doc.setFont(undefined, 'bold'); doc.setFontSize(11);
-        doc.text('Total: ' + money(t.subtotal), 196, y, { align: 'right' });
-        y += 6;
-        doc.setFont(undefined, 'bold'); doc.setFontSize(9);
-        doc.text('* Delivery charges are extra and will be confirmed separately.', 196, y, { align: 'right' });
-        doc.setFont(undefined, 'normal');
-        y += 12;
+        doc.autoTable({
+          startY: y,
+          margin: { left: margin, right: margin },
+          head: [['Sl.No', 'Cracker name', 'Qty', 'Rate', 'Total']],
+          body: body,
+          foot: [['', 'Total', String(t.count), '', t.subtotal.toFixed(2)]],
+          theme: 'grid',
+          styles: { fontSize: 8.5, cellPadding: 1.8, lineColor: [120, 120, 120], lineWidth: 0.1 },
+          headStyles: { fillColor: [122, 31, 43], textColor: 255, fontStyle: 'bold' },
+          footStyles: { fillColor: [245, 240, 230], textColor: [36, 26, 21], fontStyle: 'bold' },
+          columnStyles: {
+            0: { cellWidth: 12, halign: 'center' },
+            2: { cellWidth: 14, halign: 'right' },
+            3: { cellWidth: 22, halign: 'right' },
+            4: { cellWidth: 26, halign: 'right' },
+          },
+        });
 
-        doc.setFont(undefined, 'italic'); doc.setFontSize(8.5);
+        y = doc.lastAutoTable.finalY + 6;
+        doc.setFont(undefined, 'bold'); doc.setFontSize(8.5);
+        doc.text(numberToWords(t.subtotal) + ' Only', margin, y);
+        y += 6;
+
+        doc.setFont(undefined, 'bold'); doc.setFontSize(9);
+        doc.text('* Delivery charges are extra and will be confirmed separately.', pageW - margin, y, { align: 'right' });
+        y += 8;
+
+        doc.setFont(undefined, 'italic'); doc.setFontSize(8);
         var note = 'This is an order bill / quotation, not a payment receipt. Please send this PDF to us on WhatsApp (' + SZ.PHONE + ') to confirm your order — we will contact you to arrange payment and delivery.';
-        doc.text(doc.splitTextToSize(note, 180), 14, y);
+        doc.text(doc.splitTextToSize(note, pageW - margin * 2), margin, y);
 
         doc.save(orderId + '.pdf');
         return orderId;

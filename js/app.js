@@ -93,7 +93,7 @@ window.SZ = (function () {
       '<ul class="topbar-links"><li><a href="tel:+91' + PHONE.replace(/\s/g, '') + '">Call: ' + PHONE + '</a></li><li><a href="' + WHATSAPP + '" target="_blank" rel="noopener">WhatsApp</a></li></ul>' +
       '</div></div>' +
       '<header class="site-header"><div class="wrap"><nav class="nav" aria-label="Primary">' +
-      '<a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="40" height="40"><span>AGP<small>Crackers</small></span></a>' +
+      '<a class="brand" href="index.html"><img src="assets/logo-badge.jpg" alt="AGP Crackers" width="44" height="44"></a>' +
       '<ul class="nav-links">' +
       NAV.map((n) => '<li><a class="nav-link" href="' + n.href + '"' + (active === n.key ? ' aria-current="page"' : '') + '>' + n.label + '</a></li>').join('') +
       '</ul>' +
@@ -114,7 +114,7 @@ window.SZ = (function () {
     return (
       '<footer class="site-footer"><div class="wrap">' +
       '<div class="footer-grid">' +
-      '<div class="footer-brand"><a class="brand" href="index.html" style="color:#fff"><img src="assets/logo.svg" alt="" width="38" height="38"><span>AGP<small>Crackers</small></span></a>' +
+      '<div class="footer-brand"><a class="brand" href="index.html" style="color:#fff"><img src="assets/logo-badge.jpg" alt="AGP Crackers" width="44" height="44"></a>' +
       '<p>Wholesale &amp; retail dealers of crackers, sparklers and fancy varieties. Browse our full price-list catalog and send us your order on WhatsApp.</p></div>' +
       '<div><h4>Products</h4><ul>' + cats.slice(0, 8).map((c) => '<li><a href="products.html?category=' + c.id + '">' + escapeHtml(c.name) + '</a></li>').join('') + '<li><a href="products.html">All categories</a></li></ul></div>' +
       '<div><h4>Company</h4><ul><li><a href="about.html">About us</a></li><li><a href="safety.html">Safety tips</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Enquiry</a></li><li><a href="cart.html">Cart</a></li></ul></div>' +
