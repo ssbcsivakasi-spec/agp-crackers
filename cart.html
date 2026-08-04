@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Cart &amp; Checkout | AGP Crackers</title>
+    <meta name="description" content="Review your cart, enter your delivery details and download an order bill to confirm on WhatsApp." />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#7a1f2b" />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <main id="main">
+      <section class="page-hero">
+        <div class="wrap">
+          <nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Cart</li></ol></nav>
+          <h1>Your Cart</h1>
+          <p>Review your items, then checkout to generate an order bill.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div id="emptyState" class="empty-state" style="display:none">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h2l.6 3M7 13h10l3-7H5.6M7 13 5.6 6M7 13l-1 4h13"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg></span>
+            <h3>Your cart is empty</h3>
+            <p class="muted">Browse our catalog and add items to get started.</p>
+            <a class="btn btn-primary" href="products.html">Browse Products</a>
+          </div>
+
+          <div id="cartContent" class="grid g-2" style="grid-template-columns:1.6fr 1fr;gap:36px;align-items:flex-start">
+            <div>
+              <div id="cartLines"></div>
+            </div>
+
+            <div>
+              <div class="cart-summary">
+                <h3 style="margin-top:0">Order Summary</h3>
+                <div class="row" style="justify-content:space-between"><span class="muted">Items</span><span id="sumCount"></span></div>
+                <div class="row-total"><span>Total</span><span id="sumTotal"></span></div>
+                <p class="tiny muted" style="margin-top:-4px;font-size:.78rem"><strong>* Delivery charges are extra and will be confirmed separately.</strong></p>
+                <button class="btn btn-primary btn-block" id="checkoutBtn" style="margin-top:14px">Proceed to Checkout</button>
+                <p class="tiny muted" style="margin-top:10px;font-size:.78rem">No online payment — we confirm orders over WhatsApp.</p>
+              </div>
+
+              <div class="checkout-panel" id="checkoutPanel">
+                <div class="cart-summary" style="margin-top:18px">
+                  <h3 style="margin-top:0">Delivery Details</h3>
+                  <form id="checkoutForm">
+                    <div class="field" style="margin-bottom:12px">
+                      <label for="custName">Full name</label>
+                      <input id="custName" name="name" type="text" required />
+                    </div>
+                    <div class="field" style="margin-bottom:12px">
+                      <label for="custPhone">Contact number</label>
+                      <input id="custPhone" name="phone" type="tel" required />
+                    </div>
+                    <div class="field" style="margin-bottom:12px">
+                      <label for="custAddress">Delivery address</label>
+                      <textarea id="custAddress" name="address" required placeholder="House / street, area, city, pincode"></textarea>
+                    </div>
+                    <button class="btn btn-maroon btn-block" type="submit">Download Bill &amp; Checkout</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="confirm-modal" id="confirmModal">
+      <div class="confirm-card">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg></span>
+        <h2>Bill downloaded!</h2>
+        <p class="muted">Your order bill (PDF) has been saved to your device. Please send this receipt to us on WhatsApp to confirm and place your order — we'll get back to you to arrange payment and delivery.</p>
+        <div class="stack" style="gap:10px;margin-top:16px">
+          <a class="btn btn-primary btn-block" id="waConfirmBtn" href="#" target="_blank" rel="noopener">Open WhatsApp</a>
+          <a class="btn btn-outline btn-block" href="products.html" style="border-color:var(--maroon);color:var(--maroon)">Continue Shopping</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      SZ.renderLayout('cart');
+      var D = window.SZ_DATA;
+
+      function render() {
+        var lines = SZ_CART.lines();
+        var t = SZ_CART.totals();
+        document.getElementById('emptyState').style.display = lines.length ? 'none' : '';
+        document.getElementById('cartContent').style.display = lines.length ? '' : 'none';
+
+        document.getElementById('cartLines').innerHTML = lines.map(function (l) {
+          return '<div class="cart-line" data-id="' + l.product.id + '">' +
+            '<img src="' + l.product.image + '" alt="">' +
+            '<div><p class="nm">' + SZ.escapeHtml(l.product.name) + '</p>' +
+            '<p class="meta">' + SZ.escapeHtml(l.product.categoryName) + ' · ' + SZ.money(l.product.price) + ' / ' + SZ.escapeHtml(l.product.per) + '</p>' +
+            '<button class="remove-btn" data-remove="' + l.product.id + '">Remove</button></div>' +
+            '<div class="qty-stepper"><button type="button" data-step="-1">−</button><input type="number" value="' + l.qty + '" min="1" data-qty="' + l.product.id + '"><button type="button" data-step="1">+</button></div>' +
+            '<span class="line-total">' + SZ.money(l.lineTotal) + '</span>' +
+            '</div>';
+        }).join('');
+
+        document.getElementById('sumCount').textContent = t.count + ' item' + (t.count === 1 ? '' : 's');
+        document.getElementById('sumTotal').textContent = SZ.money(t.subtotal);
+
+        SZ.$$('[data-remove]').forEach(function (btn) {
+          btn.addEventListener('click', function () { SZ_CART.remove(btn.getAttribute('data-remove')); render(); });
+        });
+        SZ.$$('[data-step]').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var line = btn.closest('.cart-line');
+            var id = line.getAttribute('data-id');
+            var input = line.querySelector('[data-qty]');
+            var qty = Math.max(1, (parseInt(input.value, 10) || 1) + parseInt(btn.getAttribute('data-step'), 10));
+            SZ_CART.setQty(id, qty);
+            render();
+          });
+        });
+        SZ.$$('[data-qty]').forEach(function (input) {
+          input.addEventListener('change', function () {
+            SZ_CART.setQty(input.getAttribute('data-qty'), input.value);
+            render();
+          });
+        });
+      }
+
+      if (SZ.hasCookieConsent()) {
+        document.getElementById('custName').value = SZ.getCookie('agp_cust_name');
+        document.getElementById('custPhone').value = SZ.getCookie('agp_cust_phone');
+        document.getElementById('custAddress').value = SZ.getCookie('agp_cust_address');
+      }
+
+      document.getElementById('checkoutBtn').addEventListener('click', function () {
+        document.getElementById('checkoutPanel').classList.add('show');
+        document.getElementById('custName').focus();
+      });
+
+      function money(n) { return 'Rs. ' + Math.round(n).toLocaleString('en-IN'); }
+
+      function downloadBill(customer) {
+        var lines = SZ_CART.lines();
+        var t = SZ_CART.totals();
+        var orderId = 'AGP-' + Date.now().toString().slice(-8);
+        var jsPDF = window.jspdf.jsPDF;
+        var doc = new jsPDF();
+        var y = 18;
+
+        doc.setFont(undefined, 'bold'); doc.setFontSize(18);
+        doc.text('AGP CRACKERS', 14, y);
+        doc.setFont(undefined, 'normal'); doc.setFontSize(9);
+        y += 7;
+        var addrLines = doc.splitTextToSize(SZ.ADDRESS, 130);
+        doc.text(addrLines, 14, y);
+        y += addrLines.length * 4.5;
+        doc.text('Phone: ' + SZ.PHONE + ' / ' + SZ.PHONE2, 14, y);
+        y += 10;
+
+        doc.setFont(undefined, 'bold'); doc.setFontSize(13);
+        doc.text('ORDER BILL', 14, y);
+        doc.setFont(undefined, 'normal'); doc.setFontSize(9);
+        doc.text('Order ID: ' + orderId, 140, y - 4);
+        doc.text('Date: ' + new Date().toLocaleDateString('en-IN'), 140, y + 1);
+        y += 10;
+
+        doc.setFont(undefined, 'bold');
+        doc.text('Bill To', 14, y);
+        doc.setFont(undefined, 'normal');
+        y += 5;
+        doc.text('Name: ' + customer.name, 14, y); y += 5;
+        doc.text('Phone: ' + customer.phone, 14, y); y += 5;
+        var addrWrap = doc.splitTextToSize('Address: ' + customer.address, 180);
+        doc.text(addrWrap, 14, y);
+        y += addrWrap.length * 5 + 6;
+
+        doc.setDrawColor(200);
+        doc.line(14, y, 196, y);
+        y += 6;
+        doc.setFont(undefined, 'bold');
+        doc.text('#', 14, y);
+        doc.text('Item', 22, y);
+        doc.text('Qty', 130, y, { align: 'right' });
+        doc.text('Rate', 160, y, { align: 'right' });
+        doc.text('Amount', 196, y, { align: 'right' });
+        doc.setFont(undefined, 'normal');
+        y += 3;
+        doc.line(14, y, 196, y);
+        y += 6;
+
+        lines.forEach(function (l, idx) {
+          if (y > 275) { doc.addPage(); y = 20; }
+          var nameLines = doc.splitTextToSize(l.product.name + ' (' + l.product.per + ' / ' + l.product.content + ')', 100);
+          doc.text(String(idx + 1), 14, y);
+          doc.text(nameLines, 22, y);
+          doc.text(String(l.qty), 130, y, { align: 'right' });
+          doc.text(String(l.product.price), 160, y, { align: 'right' });
+          doc.text(String(l.lineTotal), 196, y, { align: 'right' });
+          y += Math.max(nameLines.length * 5, 6);
+        });
+
+        y += 2;
+        doc.line(14, y, 196, y);
+        y += 8;
+        doc.setFont(undefined, 'bold'); doc.setFontSize(11);
+        doc.text('Total: ' + money(t.subtotal), 196, y, { align: 'right' });
+        y += 6;
+        doc.setFont(undefined, 'bold'); doc.setFontSize(9);
+        doc.text('* Delivery charges are extra and will be confirmed separately.', 196, y, { align: 'right' });
+        doc.setFont(undefined, 'normal');
+        y += 12;
+
+        doc.setFont(undefined, 'italic'); doc.setFontSize(8.5);
+        var note = 'This is an order bill / quotation, not a payment receipt. Please send this PDF to us on WhatsApp (' + SZ.PHONE + ') to confirm your order — we will contact you to arrange payment and delivery.';
+        doc.text(doc.splitTextToSize(note, 180), 14, y);
+
+        doc.save(orderId + '.pdf');
+        return orderId;
+      }
+
+      document.getElementById('checkoutForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var customer = {
+          name: document.getElementById('custName').value.trim(),
+          phone: document.getElementById('custPhone').value.trim(),
+          address: document.getElementById('custAddress').value.trim(),
+        };
+        if (!customer.name || !customer.phone || !customer.address) return;
+
+        if (SZ.hasCookieConsent()) {
+          SZ.setCookie('agp_cust_name', customer.name, 30);
+          SZ.setCookie('agp_cust_phone', customer.phone, 30);
+          SZ.setCookie('agp_cust_address', customer.address, 30);
+        }
+
+        var t = SZ_CART.totals();
+        var orderId = downloadBill(customer);
+
+        var msg = encodeURIComponent(
+          'Hi, I would like to place an order (' + orderId + ').\n' +
+          'Name: ' + customer.name + '\n' +
+          'Phone: ' + customer.phone + '\n' +
+          'Address: ' + customer.address + '\n' +
+          'Items: ' + t.count + ' | Total: ' + money(t.subtotal) + '\n' +
+          'I am attaching the order bill PDF.'
+        );
+        document.getElementById('waConfirmBtn').href = SZ.WHATSAPP + '?text=' + msg;
+        document.getElementById('confirmModal').classList.add('show');
+
+        SZ_CART.clear();
+        render();
+        document.getElementById('checkoutPanel').classList.remove('show');
+        e.target.reset();
+      });
+
+      render();
+    </script>
+  </body>
+</html>

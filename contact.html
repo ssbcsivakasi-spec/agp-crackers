@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | AGP Crackers</title>
+    <meta name="description" content="Reach AGP Crackers by phone or WhatsApp — address, contact numbers and store hours." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#7a1f2b" />
+    <link rel="canonical" href="https://agpcrackers-demo.example.com/contact.html" />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <main id="main">
+      <section class="page-hero">
+        <div class="wrap">
+          <nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Contact</li></ol></nav>
+          <h1>Get in Touch</h1>
+          <p>Reach us directly by phone or WhatsApp — we're happy to help you choose.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap" style="max-width:520px">
+          <div class="cart-summary">
+            <h2 style="margin-top:0">Contact Details</h2>
+            <p class="muted small" id="ctAddress"></p>
+            <div class="stack" style="gap:12px;margin-top:18px">
+              <a class="btn btn-maroon btn-block" href="https://wa.me/919788676576" target="_blank" rel="noopener">WhatsApp: +91 97886 76576</a>
+              <a class="btn btn-outline btn-block" href="tel:+919788676576" style="border-color:var(--maroon);color:var(--maroon)">Call: +91 97886 76576</a>
+              <a class="btn btn-outline btn-block" href="tel:+918940989788" style="border-color:var(--maroon);color:var(--maroon)">Call: +91 89409 89788</a>
+            </div>
+            <div style="margin-top:22px">
+              <h3 style="font-size:1rem">Store hours</h3>
+              <p class="muted small">Monday–Saturday: 9:30 AM – 7:00 PM<br />Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      SZ.renderLayout('contact');
+      document.getElementById('ctAddress').textContent = SZ.ADDRESS;
+    </script>
+  </body>
+</html>

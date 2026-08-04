@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Safety Information &amp; Guidelines | AGP Crackers</title>
+    <meta name="description" content="Safety guidance for buying, storing and using fireworks responsibly." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#7a1f2b" />
+    <link rel="canonical" href="https://agpcrackers-demo.example.com/safety.html" />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <main id="main">
+      <section class="page-hero">
+        <div class="wrap">
+          <nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Safety information</li></ol></nav>
+          <h1>Safety Information</h1>
+          <p>Please read this before buying, storing or using any fireworks product.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <header class="sec-head" style="text-align:left;max-width:none;margin-bottom:20px"><h2>Core safety points</h2></header>
+          <ul class="safety-list" id="safetyList"></ul>
+        </div>
+      </section>
+
+      <section class="section bg-alt">
+        <div class="wrap">
+          <div class="grid g-2" style="gap:32px">
+            <div>
+              <h3>Before you buy</h3>
+              <p class="muted">Confirm your state, city and neighbourhood rules on permitted dates, times and product categories — especially for aerial items like rockets, which are restricted or banned in many areas.</p>
+            </div>
+            <div>
+              <h3>During use</h3>
+              <p class="muted">Light items on level, open ground away from buildings and dry vegetation. Keep a bucket of water or sand nearby, and never relight a dud — wait, then soak it.</p>
+            </div>
+            <div>
+              <h3>Storage</h3>
+              <p class="muted">Keep items sealed in original packaging in a cool, dry place away from heat sources. Never store in a vehicle or where children can reach.</p>
+            </div>
+            <div>
+              <h3>After use</h3>
+              <p class="muted">Let spent items cool fully, soak in water, then dispose of according to local waste guidance.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section center">
+        <div class="wrap">
+          <h2>Still have questions?</h2>
+          <p class="muted">Our team can help you choose the right products for your setting.</p>
+          <div class="hero-actions" style="justify-content:center">
+            <a class="btn btn-primary" href="contact.html">Send an enquiry</a>
+            <a class="btn btn-outline" href="faq.html" style="border-color:var(--maroon);color:var(--maroon)">Read the FAQ</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      SZ.renderLayout('safety');
+      var D = window.SZ_DATA;
+      document.getElementById('safetyList').innerHTML = D.SAFETY_POINTS.map(function (s, i) {
+        return '<li><span class="n">' + (i + 1) + '</span><span>' + SZ.escapeHtml(s) + '</span></li>';
+      }).join('');
+    </script>
+  </body>
+</html>
