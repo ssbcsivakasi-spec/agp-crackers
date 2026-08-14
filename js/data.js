@@ -180,9 +180,37 @@ window.SZ_DATA = (function () {
     price: r[5],
   }));
 
-  /* Derived fields: stock photos, category names, search text */
+  /** Real product photos, keyed by S.No — falls back to a stock photo when absent. */
+  const REAL_IMAGES = {
+    49: 'assets/products/chotta-bheem-tri-color.jpg',
+    62: 'assets/products/sun-light.jpg',
+    63: 'assets/products/moon-light.jpg',
+    71: 'assets/products/mega-star-crackling-fountain.jpg',
+    72: 'assets/products/utsav-crackling-fountain.jpg',
+    73: 'assets/products/mega-peacock.jpg',
+    74: 'assets/products/7-shots-spice-crackling.jpg',
+    75: 'assets/products/bingo-mini-fancy.jpg',
+    89: 'assets/products/honeybee-12-shots.jpg',
+    90: 'assets/products/medowells-12-shots.jpg',
+    91: 'assets/products/royal-strong-16-shots.jpg',
+    92: 'assets/products/8pm-25-shots.jpg',
+    93: 'assets/products/bacardi-30-shots.jpg',
+    94: 'assets/products/johnnie-walker-60-shots.jpg',
+    95: 'assets/products/signature-120-shots.jpg',
+    96: 'assets/products/bombay-sapphire-200-shots.jpg',
+    103: 'assets/products/helicopter.jpg',
+    106: 'assets/products/minions-fountain.jpg',
+    107: 'assets/products/jungle-series-fountain.jpg',
+    38: 'assets/products/chakkar-special.png',
+    39: 'assets/products/chakkar-deluxe.png',
+    51: 'assets/products/twinkling-star.jpg',
+    102: 'assets/products/money-in-the-bank.jpg',
+  };
+
+  /* Derived fields: real photos where available (else stock), category names, search text */
   PRODUCTS.forEach((p) => {
-    p.images = [photo(p.id + '-1'), photo(p.id + '-2')];
+    const real = REAL_IMAGES[p.sno];
+    p.images = real ? [real] : [photo(p.id + '-1'), photo(p.id + '-2')];
     p.image = p.images[0];
     p.categoryName = (CATEGORIES.find((c) => c.id === p.category) || {}).name || p.category;
     p.search = (p.name + ' ' + p.categoryName).toLowerCase();
