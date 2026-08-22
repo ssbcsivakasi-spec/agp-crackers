@@ -220,6 +220,7 @@
         var body = lines.map(function (l, idx) {
           return [
             String(idx + 1),
+            l.product.code,
             l.product.name + ' (' + l.product.per + ' / ' + l.product.content + ')',
             String(l.qty),
             l.product.price.toFixed(2),
@@ -230,18 +231,19 @@
         doc.autoTable({
           startY: y,
           margin: { left: margin, right: margin },
-          head: [['Sl.No', 'Cracker name', 'Qty', 'Rate', 'Total']],
+          head: [['Sl.No', 'Code Number', 'Cracker name', 'Qty', 'Rate', 'Total']],
           body: body,
-          foot: [['', 'Total', String(t.count), '', t.subtotal.toFixed(2)]],
+          foot: [['', '', 'Total', String(t.count), '', t.subtotal.toFixed(2)]],
           theme: 'grid',
           styles: { fontSize: 8.5, cellPadding: 1.8, lineColor: [120, 120, 120], lineWidth: 0.1 },
           headStyles: { fillColor: [122, 31, 43], textColor: 255, fontStyle: 'bold' },
           footStyles: { fillColor: [245, 240, 230], textColor: [36, 26, 21], fontStyle: 'bold' },
           columnStyles: {
             0: { cellWidth: 12, halign: 'center' },
-            2: { cellWidth: 14, halign: 'right' },
-            3: { cellWidth: 22, halign: 'right' },
-            4: { cellWidth: 26, halign: 'right' },
+            1: { cellWidth: 20, halign: 'center' },
+            3: { cellWidth: 14, halign: 'right' },
+            4: { cellWidth: 20, halign: 'right' },
+            5: { cellWidth: 24, halign: 'right' },
           },
         });
 

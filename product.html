@@ -105,7 +105,7 @@
           });
         });
 
-        document.getElementById('pdCat').textContent = p.categoryName;
+        document.getElementById('pdCat').textContent = p.categoryName + ' · Code ' + p.code;
         document.getElementById('pdName').textContent = p.name;
         document.getElementById('pdUnit').textContent = p.per + ' · ' + p.content;
         document.getElementById('pdPrice').textContent = SZ.money(p.price);

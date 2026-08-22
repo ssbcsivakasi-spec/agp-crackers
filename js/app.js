@@ -154,10 +154,11 @@ window.SZ = (function () {
     return (
       '<article class="p-card" data-id="' + p.id + '">' +
       '<div class="p-media">' +
+      '<span class="p-code-badge">' + escapeHtml(p.code) + '</span>' +
       '<a href="' + href + '"><img src="' + p.image + '" alt="' + escapeHtml(p.name) + ' — ' + escapeHtml(p.categoryName) + '" width="500" height="500" loading="lazy" decoding="async"></a>' +
       '</div>' +
       '<div class="p-body">' +
-      '<span class="p-cat">' + escapeHtml(p.categoryName) + '</span>' +
+      '<span class="p-cat">' + escapeHtml(p.categoryName) + ' &middot; Code ' + escapeHtml(p.code) + '</span>' +
       '<h3 class="p-name"><a href="' + href + '">' + escapeHtml(p.name) + '</a></h3>' +
       '<p class="p-unit muted small">' + escapeHtml(p.per) + ' &middot; ' + escapeHtml(p.content) + '</p>' +
       '<div class="p-price"><span class="now">' + money(p.price) + '</span><span class="p-per-unit">/ ' + escapeHtml(p.per) + '</span></div>' +
@@ -218,7 +219,7 @@ window.SZ = (function () {
       (p.images.length > 1
         ? '<div class="pd-thumbs" id="pdDrawerThumbs">' + p.images.map((img, i) => '<button class="' + (i === 0 ? 'active' : '') + '" data-img="' + img + '"><img src="' + img + '" alt=""></button>').join('') + '</div>'
         : '') +
-      '<span class="p-cat">' + escapeHtml(p.categoryName) + '</span>' +
+      '<span class="p-cat">' + escapeHtml(p.categoryName) + ' &middot; Code ' + escapeHtml(p.code) + '</span>' +
       '<h2 class="pd-drawer-name">' + escapeHtml(p.name) + '</h2>' +
       '<p class="muted small">' + escapeHtml(p.per) + ' &middot; ' + escapeHtml(p.content) + '</p>' +
       '<div class="pd-price-row"><span class="now">' + money(p.price) + '</span><span class="muted small">per ' + escapeHtml(p.per) + '</span></div>' +

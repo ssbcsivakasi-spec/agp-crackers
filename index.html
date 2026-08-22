@@ -96,8 +96,10 @@
       SZ.renderLayout('home');
       var D = window.SZ_DATA;
       document.getElementById('catGrid').innerHTML = D.CATEGORIES.map(function (c) {
+        var firstProduct = D.inCategory(c.id)[0];
+        var img = firstProduct ? firstProduct.image : c.image;
         return '<a class="cat-card" href="products.html?category=' + c.id + '">' +
-          '<img src="' + c.image + '" alt="' + c.name + '" width="320" height="240" loading="lazy">' +
+          '<img src="' + img + '" alt="' + c.name + '" width="320" height="240" loading="lazy">' +
           '<div class="overlay"><b>' + c.name + '</b><span>' + c.count + ' products</span></div></a>';
       }).join('');
 

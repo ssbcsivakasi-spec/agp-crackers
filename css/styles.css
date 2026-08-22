@@ -155,6 +155,11 @@ p { margin: 0 0 1em; }
   font-size: .68rem; font-weight: 800; padding: 4px 9px; border-radius: 100px; text-transform: uppercase; letter-spacing: .04em;
 }
 .badge-gold { background: var(--gold); color: var(--maroon-dark); }
+.p-code-badge {
+  position: absolute; top: 10px; right: 10px; background: var(--white); color: var(--maroon);
+  font-size: .68rem; font-weight: 800; padding: 4px 9px; border-radius: 100px; letter-spacing: .02em;
+  box-shadow: 0 1px 4px rgba(0,0,0,.15);
+}
 .p-body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
 .p-cat { font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--gold); font-weight: 700; }
 .p-name { font-size: 1.22rem; font-weight: 800; line-height: 1.3; }
