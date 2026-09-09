@@ -61,7 +61,8 @@
                       <label for="custAddress">Delivery address</label>
                       <textarea id="custAddress" name="address" required placeholder="House / street, area, city, pincode"></textarea>
                     </div>
-                    <button class="btn btn-maroon btn-block" type="submit">Download Bill &amp; Checkout</button>
+                    <p class="tiny muted" style="font-size:.78rem;margin-bottom:10px">After you tap below, your phone will open a share menu with your order bill ready to send. Tap the <strong>WhatsApp</strong> icon there (tap <strong>"More"</strong> first if you don't see it right away) to send us your order with the bill attached.</p>
+                    <button class="btn btn-maroon btn-block" type="submit">Send Order via WhatsApp</button>
                   </form>
                 </div>
               </div>
@@ -74,10 +75,11 @@
     <div class="confirm-modal" id="confirmModal">
       <div class="confirm-card">
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.5 2.5L16 9.5"/></svg></span>
-        <h2>Bill downloaded!</h2>
-        <p class="muted">Your order bill (PDF) has been saved to your device. Please send this receipt to us on WhatsApp to confirm and place your order — we'll get back to you to arrange payment and delivery.</p>
+        <h2 id="confirmTitle">Bill downloaded!</h2>
+        <p class="muted" id="confirmBody">Your order bill (PDF) has been saved to your device. Please send this receipt to us on WhatsApp to confirm and place your order — we'll get back to you to arrange payment and delivery.</p>
         <div class="stack" style="gap:10px;margin-top:16px">
           <a class="btn btn-primary btn-block" id="waConfirmBtn" href="#" target="_blank" rel="noopener">Open WhatsApp</a>
+          <button class="btn btn-outline btn-block" type="button" id="downloadCopyBtn" style="display:none;border-color:var(--maroon);color:var(--maroon)">Download PDF copy</button>
           <a class="btn btn-outline btn-block" href="products.html" style="border-color:var(--maroon);color:var(--maroon)">Continue Shopping</a>
         </div>
       </div>
@@ -178,7 +180,7 @@
         return parts.join(' ');
       }
 
-      function downloadBill(customer) {
+      function buildBill(customer) {
         var lines = SZ_CART.lines();
         var t = SZ_CART.totals();
         var orderId = 'AGP-' + Date.now().toString().slice(-8);
@@ -260,8 +262,19 @@
         var note = 'This is an order bill / quotation, not a payment receipt. Please send this PDF to us on WhatsApp (' + SZ.PHONE + ') to confirm your order — we will contact you to arrange payment and delivery.';
         doc.text(doc.splitTextToSize(note, pageW - margin * 2), margin, y);
 
-        doc.save(orderId + '.pdf');
-        return orderId;
+        return { doc: doc, orderId: orderId, t: t };
+      }
+
+      function showConfirmModal(opts) {
+        document.getElementById('confirmTitle').textContent = opts.title;
+        document.getElementById('confirmBody').textContent = opts.body;
+        var waBtn = document.getElementById('waConfirmBtn');
+        var dlBtn = document.getElementById('downloadCopyBtn');
+        waBtn.style.display = opts.waHref ? '' : 'none';
+        if (opts.waHref) waBtn.href = opts.waHref;
+        dlBtn.style.display = opts.onDownload ? '' : 'none';
+        dlBtn.onclick = opts.onDownload || null;
+        document.getElementById('confirmModal').classList.add('show');
       }
 
       document.getElementById('checkoutForm').addEventListener('submit', function (e) {
@@ -279,24 +292,58 @@
           SZ.setCookie('agp_cust_address', customer.address, 30);
         }
 
-        var t = SZ_CART.totals();
-        var orderId = downloadBill(customer);
+        var bill = buildBill(customer);
+        var doc = bill.doc, orderId = bill.orderId, t = bill.t;
 
-        var msg = encodeURIComponent(
+        var shareMsg =
           'Hi, I would like to place an order (' + orderId + ').\n' +
           'Name: ' + customer.name + '\n' +
           'Phone: ' + customer.phone + '\n' +
           'Address: ' + customer.address + '\n' +
-          'Items: ' + t.count + ' | Total: ' + money(t.subtotal) + '\n' +
-          'I am attaching the order bill PDF.'
-        );
-        document.getElementById('waConfirmBtn').href = SZ.WHATSAPP + '?text=' + msg;
-        document.getElementById('confirmModal').classList.add('show');
+          'Items: ' + t.count + ' | Total: ' + money(t.subtotal);
 
-        SZ_CART.clear();
-        render();
-        document.getElementById('checkoutPanel').classList.remove('show');
-        e.target.reset();
+        function finish() {
+          SZ_CART.clear();
+          render();
+          document.getElementById('checkoutPanel').classList.remove('show');
+          e.target.reset();
+        }
+
+        function fallback() {
+          doc.save(orderId + '.pdf');
+          var msg = encodeURIComponent(shareMsg + '\nI am attaching the order bill PDF.');
+          showConfirmModal({
+            title: 'Bill downloaded!',
+            body: "Your order bill (PDF) has been saved to your device. Please send this receipt to us on WhatsApp to confirm and place your order — we'll get back to you to arrange payment and delivery.",
+            waHref: SZ.WHATSAPP + '?text=' + msg,
+          });
+          finish();
+        }
+
+        var file;
+        try {
+          file = new File([doc.output('blob')], orderId + '.pdf', { type: 'application/pdf' });
+        } catch (err) {
+          file = null;
+        }
+
+        var canShareFiles = !!(file && navigator.canShare && navigator.share && navigator.canShare({ files: [file] }));
+
+        if (canShareFiles) {
+          navigator.share({ files: [file], text: shareMsg }).then(function () {
+            showConfirmModal({
+              title: 'Order sent to WhatsApp!',
+              body: "We've received your order — we'll confirm shortly and arrange payment and delivery.",
+              onDownload: function () { doc.save(orderId + '.pdf'); },
+            });
+            finish();
+          }).catch(function (err) {
+            if (err && err.name === 'AbortError') return; // user cancelled the share sheet, let them retry
+            fallback();
+          });
+        } else {
+          fallback();
+        }
       });
 
       render();
