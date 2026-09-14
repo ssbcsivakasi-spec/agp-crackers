@@ -4,11 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title id="pageTitle">Product — AGP Crackers</title>
-    <meta name="description" content="Product details and pricing from the AGP Crackers 2026 price list." />
+    <meta id="metaDescription" name="description" content="Product details and pricing from the AGP Crackers 2026 price list." />
+    <meta id="metaKeywords" name="keywords" content="AGP Crackers, Sivakasi crackers price list, buy crackers online, Diwali crackers 2026" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#7a1f2b" />
+    <link id="canonicalLink" rel="canonical" href="https://agpcrackers.in/product.html" />
     <link rel="icon" href="assets/logo-badge.jpg" type="image/jpeg" />
     <link rel="stylesheet" href="css/styles.css" />
+    <meta id="ogType" property="og:type" content="product" />
+    <meta property="og:site_name" content="AGP Crackers" />
+    <meta id="ogTitle" property="og:title" content="Product — AGP Crackers" />
+    <meta id="ogDescription" property="og:description" content="Product details and pricing from the AGP Crackers 2026 price list." />
+    <meta id="ogUrl" property="og:url" content="https://agpcrackers.in/product.html" />
+    <meta id="ogImage" property="og:image" content="https://agpcrackers.in/assets/hero-banner.jpg" />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta id="twitterTitle" name="twitter:title" content="Product — AGP Crackers" />
+    <meta id="twitterDescription" name="twitter:description" content="Product details and pricing from the AGP Crackers 2026 price list." />
+    <meta id="twitterImage" name="twitter:image" content="https://agpcrackers.in/assets/hero-banner.jpg" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -86,8 +99,24 @@
         document.getElementById('pdHeading').textContent = 'Product not found';
         document.getElementById('pdNotFound').style.display = '';
       } else {
-        document.title = p.name + ' — AGP Crackers';
-        document.getElementById('pageTitle').textContent = p.name + ' — AGP Crackers';
+        var pageTitle = p.name + ' — AGP Crackers';
+        var pageDesc = 'Buy ' + p.name + ' online from AGP Crackers, Sivakasi — ' + p.categoryName + ' at ' + SZ.money(p.price) + ' / ' + p.per + '. Order by WhatsApp, no online payment needed.';
+        var pageUrl = 'https://agpcrackers.in/product.html?id=' + encodeURIComponent(p.id);
+        var pageImage = new URL(p.images[0], window.location.href).href;
+
+        document.title = pageTitle;
+        document.getElementById('pageTitle').textContent = pageTitle;
+        document.getElementById('metaDescription').setAttribute('content', pageDesc);
+        document.getElementById('metaKeywords').setAttribute('content', p.name + ', ' + p.categoryName + ', Sivakasi crackers, buy ' + p.name.toLowerCase() + ' online, AGP Crackers price list');
+        document.getElementById('canonicalLink').setAttribute('href', pageUrl);
+        document.getElementById('ogTitle').setAttribute('content', pageTitle);
+        document.getElementById('ogDescription').setAttribute('content', pageDesc);
+        document.getElementById('ogUrl').setAttribute('content', pageUrl);
+        document.getElementById('ogImage').setAttribute('content', pageImage);
+        document.getElementById('twitterTitle').setAttribute('content', pageTitle);
+        document.getElementById('twitterDescription').setAttribute('content', pageDesc);
+        document.getElementById('twitterImage').setAttribute('content', pageImage);
+
         document.getElementById('pdHeading').textContent = p.name;
         document.getElementById('crumbs').innerHTML += '<li aria-current="page">' + SZ.escapeHtml(p.name) + '</li>';
         document.getElementById('pdSection').style.display = '';

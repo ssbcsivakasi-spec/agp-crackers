@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Frequently Asked Questions | AGP Crackers</title>
     <meta name="description" content="Answers to common questions about ordering, storing and using AGP Crackers products." />
+    <meta name="keywords" content="crackers order FAQ, how to order crackers online, Diwali crackers delivery FAQ, WhatsApp order crackers, Sivakasi crackers wholesale FAQ" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#7a1f2b" />
-    <link rel="canonical" href="https://agpcrackers-demo.example.com/faq.html" />
+    <link rel="canonical" href="https://agpcrackers.in/faq.html" />
     <link rel="icon" href="assets/logo-badge.jpg" type="image/jpeg" />
     <link rel="stylesheet" href="css/styles.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AGP Crackers" />
+    <meta property="og:title" content="Frequently Asked Questions | AGP Crackers" />
+    <meta property="og:description" content="Answers to common questions about ordering, storing and using AGP Crackers products." />
+    <meta property="og:url" content="https://agpcrackers.in/faq.html" />
+    <meta property="og:image" content="https://agpcrackers.in/assets/hero-banner.jpg" />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Frequently Asked Questions | AGP Crackers" />
+    <meta name="twitter:description" content="Answers to common questions about ordering, storing and using AGP Crackers products." />
+    <meta name="twitter:image" content="https://agpcrackers.in/assets/hero-banner.jpg" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -42,6 +54,22 @@
       document.getElementById('faqList').innerHTML = D.FAQS.map(function (f) {
         return '<details class="faq-item"><summary>' + SZ.escapeHtml(f.q) + '</summary><p>' + SZ.escapeHtml(f.a) + '</p></details>';
       }).join('');
+
+      var faqSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: D.FAQS.map(function (f) {
+          return {
+            '@type': 'Question',
+            name: f.q,
+            acceptedAnswer: { '@type': 'Answer', text: f.a },
+          };
+        }),
+      };
+      var schemaScript = document.createElement('script');
+      schemaScript.type = 'application/ld+json';
+      schemaScript.textContent = JSON.stringify(faqSchema);
+      document.head.appendChild(schemaScript);
     </script>
   </body>
 </html>

@@ -313,9 +313,10 @@ window.SZ_DATA = (function () {
     { q: 'Who can place an order?', a: 'Purchases are restricted to adults aged 18 or over, or the minimum legal age in your area if it is higher.' },
     { q: 'Do you check local regulations for me?', a: 'No — rules vary by state, city and neighbourhood, including permitted dates, times and product categories. You are responsible for confirming what is allowed where you live before ordering.' },
     { q: 'How should I store fireworks after delivery?', a: 'Keep them sealed in their original packaging in a cool, dry place, away from heat sources, direct sunlight and anything flammable.' },
-    { q: 'How do I place an order?', a: 'Add items to your cart, go to checkout, and enter your name, phone number and address. A bill (PDF) will be generated and downloaded automatically — send it to us on WhatsApp to confirm your order.' },
+    { q: 'How do I place an order?', a: 'Add items to your cart, go to checkout, and enter your name, phone number and address. Tap "Send Order via WhatsApp" — your phone will open a share menu with your order bill ready. Tap the WhatsApp icon (or "More" if it isn’t shown right away) to send it to us with the bill already attached.' },
     { q: 'Do you do wholesale?', a: 'Yes — AGP Crackers is a wholesale and retail dealer. Contact us directly by phone or WhatsApp for bulk pricing.' },
-    { q: 'Is this a real store?', a: 'The product catalog and prices reflect our real 2026 price list. This website itself is a demo storefront — orders are confirmed manually over WhatsApp, not processed online.' },
+    { q: 'What if I don’t see WhatsApp in the share menu?', a: 'Tap "More" in the share menu to find it. Saving our number as a contact named "AGP Crackers" beforehand (there’s a quick link for this on the checkout page) makes it easier to pick us as the recipient.' },
+    { q: 'Is this a real store?', a: 'Yes — the product catalog and prices reflect our real 2026 price list. Orders are confirmed manually over WhatsApp rather than processed with online payment.' },
   ];
 
   return {

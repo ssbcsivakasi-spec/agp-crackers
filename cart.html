@@ -47,6 +47,16 @@
 
               <div class="checkout-panel" id="checkoutPanel">
                 <div class="cart-summary" style="margin-top:18px">
+                  <h3 style="margin-top:0">How to complete your order</h3>
+                  <ol style="margin:0;padding-left:20px;line-height:1.6;font-size:.9rem">
+                    <li style="margin-bottom:6px"><a id="saveContactLink" href="#" download="AGP-Crackers.vcf" style="color:var(--maroon);font-weight:600">Save "AGP Crackers" to your contacts</a> — makes it quick to find us as the recipient in WhatsApp.</li>
+                    <li style="margin-bottom:6px">Fill in your delivery details below and tap <strong>Send Order via WhatsApp</strong>.</li>
+                    <li style="margin-bottom:6px">Your phone will open a share menu with your order bill ready — tap the <strong>WhatsApp</strong> icon (tap <strong>"More"</strong> first if you don't see it right away).</li>
+                    <li>Pick <strong>AGP Crackers</strong> as the recipient and hit <strong>Send</strong> in WhatsApp — we'll confirm your order shortly.</li>
+                  </ol>
+                </div>
+
+                <div class="cart-summary" style="margin-top:18px">
                   <h3 style="margin-top:0">Delivery Details</h3>
                   <form id="checkoutForm">
                     <div class="field" style="margin-bottom:12px">
@@ -61,7 +71,6 @@
                       <label for="custAddress">Delivery address</label>
                       <textarea id="custAddress" name="address" required placeholder="House / street, area, city, pincode"></textarea>
                     </div>
-                    <p class="tiny muted" style="font-size:.78rem;margin-bottom:10px">After you tap below, your phone will open a share menu with your order bill ready to send. Tap the <strong>WhatsApp</strong> icon there (tap <strong>"More"</strong> first if you don't see it right away) to send us your order with the bill attached.</p>
                     <button class="btn btn-maroon btn-block" type="submit">Send Order via WhatsApp</button>
                   </form>
                 </div>
@@ -93,6 +102,21 @@
     <script>
       SZ.renderLayout('cart');
       var D = window.SZ_DATA;
+
+      (function () {
+        var vcard = [
+          'BEGIN:VCARD',
+          'VERSION:3.0',
+          'FN:AGP Crackers',
+          'ORG:AGP Crackers',
+          'TEL;TYPE=CELL:+91' + SZ.PHONE.replace(/\s/g, ''),
+          'TEL;TYPE=CELL:+91' + SZ.PHONE2.replace(/\s/g, ''),
+          'ADR;TYPE=WORK:;;' + SZ.ADDRESS + ';;;;',
+          'URL:https://agpcrackers.in',
+          'END:VCARD',
+        ].join('\r\n');
+        document.getElementById('saveContactLink').href = 'data:text/vcard;charset=utf-8,' + encodeURIComponent(vcard);
+      })();
 
       function render() {
         var lines = SZ_CART.lines();
