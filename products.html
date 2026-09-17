@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Products — Full Price List | AGP Crackers, Sivakasi</title>
-    <meta name="description" content="Browse the full AGP Crackers catalog: sparklers, fountains, chakkars, flower pots, rockets, repeating shots and gift boxes with current 2026 prices." />
-    <meta name="keywords" content="crackers price list 2026, Sivakasi crackers catalog, sparklers online, ground chakkars, flower pots crackers, rockets crackers, repeating shots, gift box crackers, fancy novelties fireworks, bijili crackers, single sound crackers, wholesale crackers price list" />
+    <title id="pageTitle">Products — Full Price List | AGP Crackers, Sivakasi</title>
+    <meta id="metaDescription" name="description" content="Browse the full AGP Crackers catalog: sparklers, fountains, chakkars, flower pots, rockets, repeating shots and gift boxes with current 2026 prices." />
+    <meta id="metaKeywords" name="keywords" content="crackers price list 2026, Sivakasi crackers catalog, sparklers online, ground chakkars, flower pots crackers, rockets crackers, repeating shots, gift box crackers, fancy novelties fireworks, bijili crackers, single sound crackers, wholesale crackers price list" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#7a1f2b" />
-    <link rel="canonical" href="https://agpcrackers.in/products.html" />
+    <link id="canonicalLink" rel="canonical" href="https://agpcrackers.in/products.html" />
     <link rel="icon" href="assets/logo-badge.jpg" type="image/jpeg" />
     <link rel="stylesheet" href="css/styles.css" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="AGP Crackers" />
-    <meta property="og:title" content="Products — Full Price List | AGP Crackers, Sivakasi" />
-    <meta property="og:description" content="Browse the full AGP Crackers catalog: sparklers, fountains, chakkars, flower pots, rockets, repeating shots and gift boxes with current 2026 prices." />
-    <meta property="og:url" content="https://agpcrackers.in/products.html" />
+    <meta id="ogTitle" property="og:title" content="Products — Full Price List | AGP Crackers, Sivakasi" />
+    <meta id="ogDescription" property="og:description" content="Browse the full AGP Crackers catalog: sparklers, fountains, chakkars, flower pots, rockets, repeating shots and gift boxes with current 2026 prices." />
+    <meta id="ogUrl" property="og:url" content="https://agpcrackers.in/products.html" />
     <meta property="og:image" content="https://agpcrackers.in/assets/hero-banner.jpg" />
     <meta property="og:locale" content="en_IN" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Products — Full Price List | AGP Crackers, Sivakasi" />
-    <meta name="twitter:description" content="Browse the full AGP Crackers catalog: sparklers, fountains, chakkars, flower pots, rockets, repeating shots and gift boxes with current 2026 prices." />
+    <meta id="twitterTitle" name="twitter:title" content="Products — Full Price List | AGP Crackers, Sivakasi" />
+    <meta id="twitterDescription" name="twitter:description" content="Browse the full AGP Crackers catalog: sparklers, fountains, chakkars, flower pots, rockets, repeating shots and gift boxes with current 2026 prices." />
     <meta name="twitter:image" content="https://agpcrackers.in/assets/hero-banner.jpg" />
   </head>
   <body>
@@ -28,9 +28,9 @@
     <main id="main">
       <section class="page-hero">
         <div class="wrap">
-          <nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Products</li></ol></nav>
-          <h1>Our Product Range</h1>
-          <p>110 items across 16 categories, priced from our 2026 wholesale &amp; retail price list.</p>
+          <nav aria-label="Breadcrumb"><ol class="crumbs" id="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Products</li></ol></nav>
+          <h1 id="pageHeading">Our Product Range</h1>
+          <p id="pageSubtitle">110 items across 16 categories, priced from our 2026 wholesale &amp; retail price list.</p>
         </div>
       </section>
 
@@ -59,6 +59,33 @@
       var active = params.get('category') || 'all';
       var view = localStorage.getItem('agp_view') || 'grid';
 
+      function updateSeo() {
+        var cat = active === 'all' ? null : D.CATEGORIES.find(function (c) { return c.id === active; });
+        var title = cat ? cat.name + ' — Price List | AGP Crackers, Sivakasi' : 'Products — Full Price List | AGP Crackers, Sivakasi';
+        var desc = cat
+          ? 'Buy ' + cat.name + ' online from AGP Crackers, Sivakasi. ' + cat.blurb + ' Current 2026 prices, order by WhatsApp.'
+          : 'Browse the full AGP Crackers catalog: sparklers, fountains, chakkars, flower pots, rockets, repeating shots and gift boxes with current 2026 prices.';
+        var url = 'https://agpcrackers.in/products.html' + (cat ? '?category=' + cat.id : '');
+
+        document.title = title;
+        document.getElementById('pageTitle').textContent = title;
+        document.getElementById('metaDescription').setAttribute('content', desc);
+        document.getElementById('metaKeywords').setAttribute('content', cat ? cat.name + ', ' + cat.name.toLowerCase() + ' Sivakasi, buy ' + cat.name.toLowerCase() + ' online, AGP Crackers price list' : document.getElementById('metaKeywords').getAttribute('content'));
+        document.getElementById('canonicalLink').setAttribute('href', url);
+        document.getElementById('ogTitle').setAttribute('content', title);
+        document.getElementById('ogDescription').setAttribute('content', desc);
+        document.getElementById('ogUrl').setAttribute('content', url);
+        document.getElementById('twitterTitle').setAttribute('content', title);
+        document.getElementById('twitterDescription').setAttribute('content', desc);
+
+        document.getElementById('pageHeading').textContent = cat ? cat.name : 'Our Product Range';
+        document.getElementById('pageSubtitle').textContent = cat
+          ? cat.blurb + ' ' + D.inCategory(cat.id).length + ' items priced from our 2026 wholesale & retail price list.'
+          : '110 items across 16 categories, priced from our 2026 wholesale & retail price list.';
+        document.getElementById('crumbs').innerHTML = '<li><a href="index.html">Home</a></li>' +
+          (cat ? '<li><a href="products.html">Products</a></li><li aria-current="page">' + SZ.escapeHtml(cat.name) + '</li>' : '<li aria-current="page">Products</li>');
+      }
+
       function renderFilters() {
         var chips = [{ id: 'all', name: 'All Products' }].concat(D.CATEGORIES);
         document.getElementById('filterBar').innerHTML = chips.map(function (c) {
@@ -72,6 +99,7 @@
             window.history.replaceState({}, '', url);
             renderFilters();
             renderGrid();
+            updateSeo();
           });
         });
       }
@@ -97,6 +125,7 @@
 
       renderFilters();
       renderGrid();
+      updateSeo();
       SZ.enableCardDrawer('#productGrid');
     </script>
   </body>

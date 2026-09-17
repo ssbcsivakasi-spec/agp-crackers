@@ -1,5 +1,4 @@
-# robots.txt — AGP Crackers catalog site
-# Placeholder file. Replace the Sitemap host before deploying anywhere real.
+# robots.txt — AGP Crackers
 
 User-agent: *
 Allow: /
@@ -11,4 +10,4 @@ Crawl-delay: 10
 User-agent: SemrushBot
 Crawl-delay: 10
 
-Sitemap: https://agpcrackers-demo.example.com/sitemap.xml
+Sitemap: https://agpcrackers.in/sitemap.xml
