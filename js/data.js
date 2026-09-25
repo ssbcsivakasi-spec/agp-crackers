@@ -316,6 +316,12 @@ window.SZ_DATA = (function () {
     { q: 'How do I place an order?', a: 'Add items to your cart, go to checkout, and enter your name, phone number and address. Tap "Send Order via WhatsApp" — your phone will open a share menu with your order bill ready. Tap the WhatsApp icon (or "More" if it isn’t shown right away) to send it to us with the bill already attached.' },
     { q: 'Do you do wholesale?', a: 'Yes — AGP Crackers is a wholesale and retail dealer. Contact us directly by phone or WhatsApp for bulk pricing.' },
     { q: 'What if I don’t see WhatsApp in the share menu?', a: 'Tap "More" in the share menu to find it. Saving our number as a contact named "AGP Crackers" beforehand (there’s a quick link for this on the checkout page) makes it easier to pick us as the recipient.' },
+    { q: 'Where is AGP Crackers located?', a: 'Our shop is at 4/255, M. Meenatchipuram, Anaikootam Stop, Virudhunagar Main Road, Sivakasi - 626 005, Tamil Nadu. Call +91 97886 76576 or +91 89409 89788.' },
+    { q: 'What are your shop timings?', a: 'We are open Monday to Saturday, 9:30 AM to 7:00 PM. You can send a WhatsApp order at any time and we will reply during shop hours.' },
+    { q: 'Where can I see the Sivakasi crackers price list for 2026?', a: 'Our full 2026 price list is on the Products page, with every item, pack size and price. Each category — sparklers, flower pots, chakkars, rockets, fancy shots, repeating shots, gift boxes and more — also has its own price list page.' },
+    { q: 'What types of crackers do you sell?', a: 'We stock 110 items across 16 categories: sparklers, single sound crackers (Lakshmi, Kuruvi), bijili, ground chakkars, flower pots, twinkling stars, pencil torch, bombs, rockets, aerial fountains, fancy novelties, repeating shots, children crackers, new varieties, match boxes and gift boxes.' },
+    { q: 'Can I choose the quantity when ordering?', a: 'Yes. Every product has a quantity selector — pick how many boxes or packets you need and tap Add to Cart. You can also change quantities in the cart before sending your order.' },
+    { q: 'Do you have crackers gift boxes for Diwali?', a: 'Yes — see our Gift Boxes category. For bulk gift boxes for staff or customers, call us for wholesale pricing.' },
     { q: 'Is this a real store?', a: 'Yes — the product catalog and prices reflect our real 2026 price list. Orders are confirmed manually over WhatsApp rather than processed with online payment.' },
   ];
 

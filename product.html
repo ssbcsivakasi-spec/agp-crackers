@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -99,7 +99,7 @@
         document.getElementById('pdHeading').textContent = 'Product not found';
         document.getElementById('pdNotFound').style.display = '';
       } else {
-        var pageTitle = p.name + ' — AGP Crackers';
+        var pageTitle = p.name + ' — ' + SZ.money(p.price) + ' | ' + p.categoryName + ' | AGP Crackers Sivakasi';
         var pageDesc = 'Buy ' + p.name + ' online from AGP Crackers, Sivakasi — ' + p.categoryName + ' at ' + SZ.money(p.price) + ' / ' + p.per + '. Order by WhatsApp, no online payment needed.';
         var pageUrl = 'https://agpcrackers.in/product.html?id=' + encodeURIComponent(p.id);
         var pageImage = new URL(p.images[0], window.location.href).href;
@@ -107,7 +107,7 @@
         document.title = pageTitle;
         document.getElementById('pageTitle').textContent = pageTitle;
         document.getElementById('metaDescription').setAttribute('content', pageDesc);
-        document.getElementById('metaKeywords').setAttribute('content', p.name + ', ' + p.categoryName + ', Sivakasi crackers, buy ' + p.name.toLowerCase() + ' online, AGP Crackers price list');
+        document.getElementById('metaKeywords').setAttribute('content', p.name + ', ' + p.name + ' price, ' + p.categoryName + ', ' + p.categoryName + ' price list 2026, buy ' + p.name.toLowerCase() + ' online, Sivakasi crackers, Diwali crackers 2026, pattasu, AGP Crackers price list');
         document.getElementById('canonicalLink').setAttribute('href', pageUrl);
         document.getElementById('ogTitle').setAttribute('content', pageTitle);
         document.getElementById('ogDescription').setAttribute('content', pageDesc);
@@ -118,7 +118,7 @@
         document.getElementById('twitterImage').setAttribute('content', pageImage);
 
         document.getElementById('pdHeading').textContent = p.name;
-        document.getElementById('crumbs').innerHTML += '<li aria-current="page">' + SZ.escapeHtml(p.name) + '</li>';
+        document.getElementById('crumbs').innerHTML += '<li><a href="' + SZ.categoryUrl(p.category) + '">' + SZ.escapeHtml(p.categoryName) + '</a></li><li aria-current="page">' + SZ.escapeHtml(p.name) + '</li>';
         document.getElementById('pdSection').style.display = '';
 
         var schemas = [
@@ -146,7 +146,8 @@
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://agpcrackers.in/' },
               { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://agpcrackers.in/products.html' },
-              { '@type': 'ListItem', position: 3, name: p.name, item: pageUrl },
+              { '@type': 'ListItem', position: 3, name: p.categoryName, item: 'https://agpcrackers.in/' + SZ.categoryUrl(p.category) },
+              { '@type': 'ListItem', position: 4, name: p.name, item: pageUrl },
             ],
           },
         ];

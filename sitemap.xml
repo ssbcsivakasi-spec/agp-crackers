@@ -1,801 +1,911 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://agpcrackers.in/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://agpcrackers.in/products.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://agpcrackers.in/products.html?category=sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://agpcrackers.in/sparklers.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agpcrackers.in/products.html?category=single-sound</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://agpcrackers.in/single-sound.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agpcrackers.in/products.html?category=bijili</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://agpcrackers.in/bijili.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agpcrackers.in/products.html?category=chakkars</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://agpcrackers.in/chakkars.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agpcrackers.in/products.html?category=flower-pots</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://agpcrackers.in/flower-pots.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agpcrackers.in/products.html?category=twinkling-star</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://agpcrackers.in/twinkling-star.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agpcrackers.in/products.html?category=pencil-torch</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://agpcrackers.in/pencil-torch.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agpcrackers.in/products.html?category=bombs</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://agpcrackers.in/bombs.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agpcrackers.in/products.html?category=rockets</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://agpcrackers.in/rockets.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agpcrackers.in/products.html?category=ariel-fountain</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://agpcrackers.in/ariel-fountain.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agpcrackers.in/products.html?category=fancy-novelties</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://agpcrackers.in/fancy-novelties.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agpcrackers.in/products.html?category=repeating-shots</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://agpcrackers.in/repeating-shots.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agpcrackers.in/products.html?category=children-crackers</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://agpcrackers.in/children-crackers.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agpcrackers.in/products.html?category=new-varieties</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://agpcrackers.in/new-varieties.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agpcrackers.in/products.html?category=match-boxes</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://agpcrackers.in/match-boxes.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://agpcrackers.in/products.html?category=gift-boxes</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://agpcrackers.in/gift-boxes.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p1-7-cm-electric-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p2-7-cm-colour-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p3-7-cm-green-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p4-7-cm-red-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p5-10-cm-electric-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p6-10-cm-colour-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p7-10-cm-green-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p8-10-cm-red-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p9-12-cm-electric-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p10-12-cm-colour-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p11-12-cm-green-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p12-12-cm-red-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p13-15-cm-electric-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p14-15-cm-colour-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p15-15-cm-green-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p16-15-cm-red-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p17-30-cm-electric-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p18-30-cm-colour-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p19-30-cm-green-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p20-30-cm-red-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p21-50-cm-electric-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p22-50-cm-colour-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p23-rotating-red-and-green-sparklers</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p24-2-3-4-kuruvi</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p25-3-1-2-lakshmi</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p26-4-lakshmi</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p27-4-deluxe-lakshmi</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p28-4-gold-lakshmi</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p29-5-titoo-lakshmi</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p30-two-sound</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p31-red-bijili-50-pcs</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p32-red-bijili-100-pcs</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p33-stripped-bijili</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p34-red-bijili-hundred</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p35-red-bijili-thousand</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p36-red-bijili-five-thousand</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p37-ground-chakkar-puppy</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p38-ground-chakkar-special</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p39-ground-chakkar-deluxe</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p40-spinner-special</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p41-flower-pots-big</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p42-flower-pots-special</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p43-colour-kotti</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p44-colour-kotti-deluxe-f-p-deluxe</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p45-red-flower-pots-big</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p46-rangeela-lucky-red-and-green</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p47-pancharanga</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p48-flower-pots-ashoka</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p49-chotta-bheem-tri-color</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p50-tri-colour</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p51-1-5-feet-twinkling-star</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p52-4-feet-twinkling-star</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p53-double-blast-gun</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p54-deluxe-bullet-bomb</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p55-king-of-king-green</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p56-digital-bomb</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p57-paper-bomb-250</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p58-rocket-bomb</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p59-lunik-rocket</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p60-whistling-rocket</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p61-3d-pops</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p62-sun-light</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p63-moon-light</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p64-tom-and-jerry</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p65-traffic-lights</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p66-sizzler-red-green</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p67-disco-shower</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p68-glittering-pops</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p69-mini-siren-bannsuri</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p70-mega-siren</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p71-mega-star-cocktail</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p72-utsaw-color-crackling-fountain</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p73-mega-peacock</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p74-7-shots-spice-crackling</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p75-bingo-mini-fancy</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p76-1-fancy</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p77-1-3-4-fancy-2-fancy</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p78-2-fancy</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p79-2-1-4-fancy</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p80-3-fancy</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p81-3-1-4-fancy</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p82-3-1-4-fancy-love-series</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p83-3-1-2-fancy</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p84-3-1-2-fancy-2-pcs</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p85-2-double-ball-fancy</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p86-6-shots-love-dose</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p87-10-shots</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p88-12-shots-rider</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p89-12-shots-honeybee</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p90-12-shots-medowells</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p91-16-shots-royal-strong</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p92-25-shots-8-pm</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p93-30-shots-bacardi</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p94-60-shots-johnnie-walker</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p95-120-shots-signature</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p96-200-shots-bombay-saphire</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p97-bambaram</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p98-jee-boom-baa</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p99-power-stone</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p100-assorted-cartoons</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p101-egg-serphant</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p102-money-in-the-bank</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p103-helicopter</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p104-candy-crush</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p105-cylinder-bomb</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p106-minions-fountain</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p107-jungle-series-fountain</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p108-match-box-laptop</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p109-match-box-max-laptop</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/product.html?id=p110-day-night</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://agpcrackers.in/about.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://agpcrackers.in/safety.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://agpcrackers.in/faq.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://agpcrackers.in/contact.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/safety.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://agpcrackers.in/terms.html</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p1-7-cm-electric-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/1.png</image:loc><image:title>7 cm Electric Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p2-7-cm-colour-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/2.png</image:loc><image:title>7 cm Colour Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p3-7-cm-green-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/3.png</image:loc><image:title>7 cm Green Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p4-7-cm-red-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/4.png</image:loc><image:title>7 cm Red Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p5-10-cm-electric-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/5.png</image:loc><image:title>10 cm Electric Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p6-10-cm-colour-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/6.png</image:loc><image:title>10 cm Colour Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p7-10-cm-green-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/7.png</image:loc><image:title>10 cm Green Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p8-10-cm-red-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/8.png</image:loc><image:title>10 cm Red Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p9-12-cm-electric-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/9.png</image:loc><image:title>12 cm Electric Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p10-12-cm-colour-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/10.png</image:loc><image:title>12 cm Colour Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p11-12-cm-green-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/11.png</image:loc><image:title>12 cm Green Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p12-12-cm-red-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/12.png</image:loc><image:title>12 cm Red Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p13-15-cm-electric-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/13.png</image:loc><image:title>15 cm Electric Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p14-15-cm-colour-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/14.png</image:loc><image:title>15 cm Colour Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p15-15-cm-green-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/15.png</image:loc><image:title>15 cm Green Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p16-15-cm-red-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/16.png</image:loc><image:title>15 cm Red Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p17-30-cm-electric-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/17.png</image:loc><image:title>30 cm Electric Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p18-30-cm-colour-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/18.png</image:loc><image:title>30 cm Colour Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p19-30-cm-green-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/19.png</image:loc><image:title>30 cm Green Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p20-30-cm-red-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/20.png</image:loc><image:title>30 cm Red Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p21-50-cm-electric-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/21.png</image:loc><image:title>50 cm Electric Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p22-50-cm-colour-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/22.png</image:loc><image:title>50 cm Colour Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p23-rotating-red-and-green-sparklers</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/23.png</image:loc><image:title>Rotating Red &amp; Green Sparklers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p24-2-3-4-kuruvi</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/24.png</image:loc><image:title>2 3/4&quot; Kuruvi</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p25-3-1-2-lakshmi</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/25.jpeg</image:loc><image:title>3 1/2&quot; Lakshmi</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p26-4-lakshmi</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/26.png</image:loc><image:title>4&quot; Lakshmi</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p27-4-deluxe-lakshmi</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/27.jpeg</image:loc><image:title>4&quot; Deluxe Lakshmi</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p28-4-gold-lakshmi</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/28.jpeg</image:loc><image:title>4&quot; Gold Lakshmi</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p29-5-titoo-lakshmi</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/29.jpeg</image:loc><image:title>5&quot; Titoo / Lakshmi</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p30-two-sound</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/30.jpeg</image:loc><image:title>Two Sound</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p31-red-bijili-50-pcs</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/31.webp</image:loc><image:title>Red Bijili (50 Pcs)</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p32-red-bijili-100-pcs</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/32.webp</image:loc><image:title>Red Bijili (100 Pcs)</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p33-stripped-bijili</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/33.webp</image:loc><image:title>Stripped Bijili</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p34-red-bijili-hundred</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/34.jpeg</image:loc><image:title>Red Bijili Hundred</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p35-red-bijili-thousand</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/35.webp</image:loc><image:title>Red Bijili Thousand</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p36-red-bijili-five-thousand</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/36.webp</image:loc><image:title>Red Bijili Five Thousand</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p37-ground-chakkar-puppy</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/37.png</image:loc><image:title>Ground Chakkar Puppy</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p38-ground-chakkar-special</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/38.png</image:loc><image:title>Ground Chakkar Special</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p39-ground-chakkar-deluxe</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/39.png</image:loc><image:title>Ground Chakkar Deluxe</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p40-spinner-special</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/40.png</image:loc><image:title>Spinner Special</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p41-flower-pots-big</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/41.png</image:loc><image:title>Flower Pots Big</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p42-flower-pots-special</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/42.png</image:loc><image:title>Flower Pots Special</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p43-colour-kotti</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/43.png</image:loc><image:title>Colour Kotti</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p44-colour-kotti-deluxe-f-p-deluxe</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/44.png</image:loc><image:title>Colour Kotti Deluxe / F P Deluxe</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p45-red-flower-pots-big</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/45.png</image:loc><image:title>Red Flower Pots Big</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p46-rangeela-lucky-red-and-green</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/46.png</image:loc><image:title>Rangeela / Lucky Red &amp; Green</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p47-pancharanga</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/47.png</image:loc><image:title>Pancharanga</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p48-flower-pots-ashoka</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/48.png</image:loc><image:title>Flower Pots Ashoka</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p49-chotta-bheem-tri-color</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/products/chotta-bheem-tri-color.jpg</image:loc><image:title>Chotta Bheem Tri Color</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p50-tri-colour</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/50.png</image:loc><image:title>Tri Colour</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p51-1-5-feet-twinkling-star</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/51.png</image:loc><image:title>1.5 Feet Twinkling Star</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p52-4-feet-twinkling-star</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/52.png</image:loc><image:title>4 Feet Twinkling Star</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p53-double-blast-gun</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/53.jpeg</image:loc><image:title>Double Blast Gun</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p54-deluxe-bullet-bomb</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/54.png</image:loc><image:title>Deluxe Bullet Bomb</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p55-king-of-king-green</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/55.png</image:loc><image:title>King of King Green</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p56-digital-bomb</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/56.png</image:loc><image:title>Digital Bomb</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p57-paper-bomb-250</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/57.webp</image:loc><image:title>Paper Bomb 250</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p58-rocket-bomb</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/58.jpg</image:loc><image:title>Rocket Bomb</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p59-lunik-rocket</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/59.jpeg</image:loc><image:title>Lunik Rocket</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p60-whistling-rocket</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/60.png</image:loc><image:title>Whistling Rocket</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p61-3d-pops</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/61.png</image:loc><image:title>3D Pops</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p62-sun-light</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/products/sun-light.jpg</image:loc><image:title>Sun Light</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p63-moon-light</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/products/moon-light.jpg</image:loc><image:title>Moon Light</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p64-tom-and-jerry</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/64.png</image:loc><image:title>Tom &amp; Jerry</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p65-traffic-lights</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/65.jpeg</image:loc><image:title>Traffic Lights</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p66-sizzler-red-green</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/66.png</image:loc><image:title>Sizzler Red Green</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p67-disco-shower</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/67.jpeg</image:loc><image:title>Disco Shower</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p68-glittering-pops</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/68.jpeg</image:loc><image:title>Glittering Pops</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p69-mini-siren-bannsuri</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/69.png</image:loc><image:title>Mini Siren / Bannsuri</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p70-mega-siren</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/70.png</image:loc><image:title>Mega Siren</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p71-mega-star-cocktail</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/products/mega-star-crackling-fountain.jpg</image:loc><image:title>Mega Star / Cocktail</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p72-utsaw-color-crackling-fountain</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/72.png</image:loc><image:title>Utsaw Color Crackling Fountain</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p73-mega-peacock</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/products/mega-peacock.jpg</image:loc><image:title>Mega Peacock</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p74-7-shots-spice-crackling</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/74.jpeg</image:loc><image:title>7 Shots / Spice Crackling</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p75-bingo-mini-fancy</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/products/bingo-mini-fancy.jpg</image:loc><image:title>Bingo Mini Fancy</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p76-1-fancy</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/76.png</image:loc><image:title>1&quot; Fancy</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p77-1-3-4-fancy-2-fancy</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/77.jpeg</image:loc><image:title>1 3/4&quot; Fancy / 2&quot; Fancy</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p78-2-fancy</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/78.png</image:loc><image:title>2&quot; Fancy</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p79-2-1-4-fancy</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/79.webp</image:loc><image:title>2 1/4&quot; Fancy</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p80-3-fancy</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/80.png</image:loc><image:title>3&quot; Fancy</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p81-3-1-4-fancy</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/81.webp</image:loc><image:title>3 1/4&quot; Fancy</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p82-3-1-4-fancy-love-series</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/82.png</image:loc><image:title>3 1/4&quot; Fancy Love Series</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p83-3-1-2-fancy</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/83.png</image:loc><image:title>3 1/2&quot; Fancy</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p84-3-1-2-fancy-2-pcs</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/84.png</image:loc><image:title>3 1/2&quot; Fancy (2 Pcs)</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p85-2-double-ball-fancy</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/85.webp</image:loc><image:title>2&quot; Double Ball Fancy</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p86-6-shots-love-dose</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/86.png</image:loc><image:title>6 Shots Love Dose</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p87-10-shots</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/87.png</image:loc><image:title>10 Shots</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p88-12-shots-rider</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/88.png</image:loc><image:title>12 Shots Rider</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p89-12-shots-honeybee</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/products/honeybee-12-shots.jpg</image:loc><image:title>12 Shots Honeybee</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p90-12-shots-medowells</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/products/medowells-12-shots.jpg</image:loc><image:title>12 Shots Medowells</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p91-16-shots-royal-strong</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/products/royal-strong-16-shots.jpg</image:loc><image:title>16 Shots Royal Strong</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p92-25-shots-8-pm</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/products/8pm-25-shots.jpg</image:loc><image:title>25 Shots 8 PM</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p93-30-shots-bacardi</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/products/bacardi-30-shots.jpg</image:loc><image:title>30 Shots Bacardi</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p94-60-shots-johnnie-walker</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/products/johnnie-walker-60-shots.jpg</image:loc><image:title>60 Shots Johnnie Walker</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p95-120-shots-signature</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/products/signature-120-shots.jpg</image:loc><image:title>120 Shots Signature</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p96-200-shots-bombay-saphire</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/products/bombay-sapphire-200-shots.jpg</image:loc><image:title>200 Shots Bombay Saphire</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p97-bambaram</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/97.png</image:loc><image:title>Bambaram</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p98-jee-boom-baa</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/98.jpg</image:loc><image:title>Jee Boom Baa</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p99-power-stone</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/99.png</image:loc><image:title>Power Stone</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p100-assorted-cartoons</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/100.png</image:loc><image:title>Assorted Cartoons</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p101-egg-serphant</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/101.jpg</image:loc><image:title>Egg Serphant</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p102-money-in-the-bank</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/102.jpeg</image:loc><image:title>Money In The Bank</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p103-helicopter</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/103.jpeg</image:loc><image:title>Helicopter</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p104-candy-crush</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/104.jpeg</image:loc><image:title>Candy Crush</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p105-cylinder-bomb</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/105.png</image:loc><image:title>Cylinder Bomb</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p106-minions-fountain</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/products/minions-fountain.jpg</image:loc><image:title>Minions Fountain</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p107-jungle-series-fountain</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/products/jungle-series-fountain.jpg</image:loc><image:title>Jungle Series Fountain</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p108-match-box-laptop</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/108.webp</image:loc><image:title>Match Box Laptop</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p109-match-box-max-laptop</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/109.webp</image:loc><image:title>Match Box Max Laptop</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://agpcrackers.in/product.html?id=p110-day-night</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://agpcrackers.in/assets/background-remover/110.webp</image:loc><image:title>Day Night</image:title></image:image>
   </url>
 </urlset>

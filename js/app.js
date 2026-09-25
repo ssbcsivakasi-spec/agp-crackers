@@ -116,7 +116,8 @@ window.SZ = (function () {
       '<div class="footer-grid">' +
       '<div class="footer-brand"><a class="brand" href="index.html" style="color:#fff"><img src="assets/logo-badge.jpg" alt="AGP Crackers" width="44" height="44"></a>' +
       '<p>Wholesale &amp; retail dealers of crackers, sparklers and fancy varieties. Browse our full price-list catalog and send us your order on WhatsApp.</p></div>' +
-      '<div><h4>Products</h4><ul>' + cats.slice(0, 8).map((c) => '<li><a href="products.html?category=' + c.id + '">' + escapeHtml(c.name) + '</a></li>').join('') + '<li><a href="products.html">All categories</a></li></ul></div>' +
+      '<div><h4>Products</h4><ul>' + cats.slice(0, 8).map((c) => '<li><a href="' + categoryUrl(c.id) + '">' + escapeHtml(c.name) + '</a></li>').join('') + '<li><a href="products.html">All categories</a></li></ul></div>' +
+      '<div><h4>More Crackers</h4><ul>' + cats.slice(8).map((c) => '<li><a href="' + categoryUrl(c.id) + '">' + escapeHtml(c.name) + '</a></li>').join('') + '</ul></div>' +
       '<div><h4>Company</h4><ul><li><a href="about.html">About us</a></li><li><a href="safety.html">Safety tips</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Enquiry</a></li><li><a href="cart.html">Cart</a></li></ul></div>' +
       '<div><h4>Contact</h4><ul><li>' + ADDRESS + '</li><li><a href="tel:+91' + PHONE.replace(/\s/g, '') + '">' + PHONE + '</a></li><li><a href="tel:+91' + PHONE2.replace(/\s/g, '') + '">' + PHONE2 + '</a></li></ul></div>' +
       '</div>' +
@@ -163,7 +164,12 @@ window.SZ = (function () {
       '<p class="p-unit muted small">' + escapeHtml(p.per) + ' &middot; ' + escapeHtml(p.content) + '</p>' +
       '<div class="p-price"><span class="now">' + money(p.price) + '</span><span class="p-per-unit">/ ' + escapeHtml(p.per) + '</span></div>' +
       '<div class="p-foot">' +
-      '<button class="btn btn-primary btn-sm btn-block" onclick="SZ_CART.add(\'' + p.id + '\')">Add to Cart</button>' +
+      '<div class="p-add-row">' +
+      '<div class="qty-stepper p-qty"><button type="button" data-qty-step="-1" aria-label="Decrease quantity">&minus;</button>' +
+      '<input type="number" class="p-qty-input" value="1" min="1" inputmode="numeric" aria-label="Quantity of ' + escapeHtml(p.name) + '">' +
+      '<button type="button" data-qty-step="1" aria-label="Increase quantity">+</button></div>' +
+      '<button class="btn btn-primary btn-sm" type="button" data-add-id="' + p.id + '">Add to Cart</button>' +
+      '</div>' +
       '<a class="btn btn-outline btn-sm btn-block" style="border-color:var(--maroon);color:var(--maroon)" href="' + href + '">Details</a>' +
       '</div>' +
       '</div></article>'
@@ -174,6 +180,63 @@ window.SZ = (function () {
     const node = typeof target === 'string' ? $(target) : target;
     if (node) node.innerHTML = list.map(productCard).join('');
   };
+
+  /* Card quantity steppers and Add to Cart buttons, delegated once so they
+     work for every grid (including pre-rendered HTML) without re-binding. */
+  document.addEventListener('click', (e) => {
+    const step = e.target.closest('.p-card [data-qty-step]');
+    if (step) {
+      const input = $('.p-qty-input', step.closest('.p-card'));
+      input.value = Math.max(1, (parseInt(input.value, 10) || 1) + parseInt(step.getAttribute('data-qty-step'), 10));
+      return;
+    }
+    const add = e.target.closest('.p-card [data-add-id]');
+    if (add) {
+      const input = $('.p-qty-input', add.closest('.p-card'));
+      window.SZ_CART.add(add.getAttribute('data-add-id'), Math.max(1, parseInt(input && input.value, 10) || 1));
+      if (input) input.value = 1;
+    }
+  });
+
+  /* -------------------------------------------------- catalog (products.html + static category pages)
+     Each category has its own pre-rendered page (sparklers.html, ...) built by
+     tools/build-seo.js, so filter chips are real links Google can crawl. */
+  const categoryUrl = (id) => (!id || id === 'all' ? 'products.html' : id + '.html');
+
+  function filterBarHtml(active) {
+    return [{ id: 'all', name: 'All Products' }].concat(D.CATEGORIES).map((c) =>
+      '<a class="chip' + (c.id === active ? ' active' : '') + '" href="' + categoryUrl(c.id) + '"' + (c.id === active ? ' aria-current="page"' : '') + '>' + escapeHtml(c.name) + '</a>'
+    ).join('');
+  }
+
+  function renderCatalog(active) {
+    const list = active === 'all' ? D.PRODUCTS : D.inCategory(active);
+    const grid = $('#productGrid');
+    let view = 'grid';
+    try { view = localStorage.getItem('agp_view') || 'grid'; } catch (e) {}
+
+    $('#filterBar').innerHTML = filterBarHtml(active);
+    $('#resultCount').textContent = list.length + ' product' + (list.length === 1 ? '' : 's');
+    renderCards(grid, list);
+
+    function applyView() {
+      grid.classList.toggle('list-view', view === 'list');
+      ['grid', 'list'].forEach((v) => {
+        const btn = $('#' + v + 'Btn');
+        btn.classList.toggle('active', view === v);
+        btn.setAttribute('aria-pressed', String(view === v));
+      });
+    }
+    ['grid', 'list'].forEach((v) => {
+      $('#' + v + 'Btn').addEventListener('click', () => {
+        view = v;
+        try { localStorage.setItem('agp_view', view); } catch (e) {}
+        applyView();
+      });
+    });
+    applyView();
+    enableCardDrawer(grid);
+  }
 
   /* -------------------------------------------------- product quick-view drawer */
   let drawerEls = null;
@@ -272,5 +335,5 @@ window.SZ = (function () {
     });
   }
 
-  return { $, $$, money, escapeHtml, BRAND, PHONE, PHONE2, WHATSAPP, ADDRESS, ICONS, renderLayout, productCard, renderCards, openProductDrawer, enableCardDrawer, setCookie, getCookie, deleteCookie, hasCookieConsent };
+  return { $, $$, money, escapeHtml, BRAND, PHONE, PHONE2, WHATSAPP, ADDRESS, ICONS, renderLayout, productCard, renderCards, categoryUrl, filterBarHtml, renderCatalog, openProductDrawer, enableCardDrawer, setCookie, getCookie, deleteCookie, hasCookieConsent };
 })();
