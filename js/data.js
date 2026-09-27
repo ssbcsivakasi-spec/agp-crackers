@@ -235,7 +235,7 @@ window.SZ_DATA = (function () {
     32: 'assets/background-remover/33.webp',
     33: 'assets/background-remover/32.webp',
     34: 'assets/background-remover/34.jpeg',
-    35: 'assets/background-remover/35.webp',
+    35: 'assets/background-remover/35.png',
     36: 'assets/background-remover/36.png',
     37: 'assets/background-remover/37.png',
     38: 'assets/background-remover/38.png',
