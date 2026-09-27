@@ -62,7 +62,7 @@ window.SZ_DATA = (function () {
     [20, '30 cm Red Sparklers', 'sparklers', '1 Box', '5 Pcs', 50],
     [21, '50 cm Electric Sparklers', 'sparklers', '1 Box', '5 Pcs', 150],
     [22, '50 cm Colour Sparklers', 'sparklers', '1 Box', '5 Pcs', 170],
-    [23, 'Rotating Red & Green Sparklers', 'sparklers', '1 Box', '—', 220],
+    [23, 'Rotating Red & Green Sparklers', 'sparklers', '1 Box', '1 Pce', 220],
 
     [24, '2 3/4" Kuruvi', 'single-sound', '1 Pkt', '5 Pcs', 10],
     [25, '3 1/2" Lakshmi', 'single-sound', '1 Pkt', '5 Pcs', 17],
@@ -72,12 +72,12 @@ window.SZ_DATA = (function () {
     [29, '5" Titoo / Lakshmi', 'single-sound', '1 Pkt', '5 Pcs', 55],
     [30, 'Two Sound', 'single-sound', '1 Pkt', '5 Pcs', 38],
 
-    [31, 'Red Bijili (50 Pcs)', 'bijili', '1 Bag', '50 Pcs', 18],
-    [32, 'Red Bijili (100 Pcs)', 'bijili', '1 Bag', '100 Pcs', 36],
-    [33, 'Stripped Bijili', 'bijili', '1 Bag', '100 Pcs', 40],
-    [34, 'Red Bijili Hundred', 'bijili', '1 Bag', '1 Pce', 50],
-    [35, 'Red Bijili Thousand', 'bijili', '1 Bag', '1 Pce', 180],
-    [36, 'Red Bijili Five Thousand', 'bijili', '1 Bag', '1 Pce', 900],
+    [31, 'Red Bijili (100 Pcs)', 'bijili', '1 Bag', '100 Pcs', 36],
+    [32, 'Stripped Bijili (100 Pcs)', 'bijili', '1 Bag', '100 Pcs', 40],
+    [33, 'Red Bijili (50 Pcs)', 'bijili', '1 Bag', '50 Pcs', 18],
+    [34, 'Red Bijili Hundred', 'bijili', '1 box', '1 Pce', 50],
+    [35, 'Red Bijili Thousand', 'bijili', '1 box', '1 Pce', 180],
+    [36, 'Red Bijili Five Thousand', 'bijili', '1 box', '1 Pce', 900],
 
     [37, 'Ground Chakkar Puppy', 'chakkars', '1 Box', '10 Pcs', 47],
     [38, 'Ground Chakkar Special', 'chakkars', '1 Box', '10 Pcs', 70],
@@ -130,11 +130,11 @@ window.SZ_DATA = (function () {
     [78, '2" Fancy', 'fancy-novelties', '1 Box', '1 Pce', 100],
     [79, '2 1/4" Fancy', 'fancy-novelties', '1 Box', '3 Pcs', 380],
     [80, '3" Fancy', 'fancy-novelties', '1 Box', '1 Pce', 330],
-    [81, '3 1/4" Fancy', 'fancy-novelties', '1 Box', '1 Pce', 350],
-    [82, '3 1/4" Fancy Love Series', 'fancy-novelties', '1 Box', '1 Pce', 360],
-    [83, '3 1/2" Fancy', 'fancy-novelties', '1 Box', '1 Pce', 450],
+    [81, '3 1/2" Fancy', 'fancy-novelties', '1 Box', '1 Pce', 350],
+    [82, '3 1/2" Fancy Love Series', 'fancy-novelties', '1 Box', '1 Pce', 360],
+    [83, '4" Fancy', 'fancy-novelties', '1 Box', '1 Pce', 450],
     [84, '3 1/2" Fancy (2 Pcs)', 'fancy-novelties', '1 Box', '2 Pcs', 700],
-    [85, '2" Double Ball Fancy', 'fancy-novelties', '1 Box', '2 Pcs', 460],
+    [85, '3 1/2" Double Ball Fancy', 'fancy-novelties', '1 Box', '2 Pcs', 460],
 
     [86, '6 Shots Love Dose', 'repeating-shots', '1 Box', '1 Pce', 100],
     [87, '10 Shots', 'repeating-shots', '1 Box', '1 Pce', 200],
@@ -164,7 +164,7 @@ window.SZ_DATA = (function () {
     [108, 'Match Box Laptop', 'match-boxes', '1 Box', '100 Pcs', 240],
     [109, 'Match Box Max Laptop', 'match-boxes', '1 Box', '100 Pcs', 180],
 
-    [110, 'Day Night', 'gift-boxes', '1 Box', '35 Pcs', 1000],
+    [110, 'Day Night - Gift Box', 'gift-boxes', '1 Box', '35 Pcs', 1000],
   ];
 
   const slugify = (s) =>
@@ -232,8 +232,8 @@ window.SZ_DATA = (function () {
     29: 'assets/background-remover/29.jpeg',
     30: 'assets/background-remover/30.jpeg',
     31: 'assets/background-remover/31.webp',
-    32: 'assets/background-remover/32.webp',
-    33: 'assets/background-remover/33.webp',
+    32: 'assets/background-remover/33.webp',
+    33: 'assets/background-remover/32.webp',
     34: 'assets/background-remover/34.jpeg',
     35: 'assets/background-remover/35.webp',
     36: 'assets/background-remover/36.webp',
@@ -316,7 +316,7 @@ window.SZ_DATA = (function () {
     { q: 'How do I place an order?', a: 'Add items to your cart, go to checkout, and enter your name, phone number and address. Tap "Send Order via WhatsApp" — your phone will open a share menu with your order bill ready. Tap the WhatsApp icon (or "More" if it isn’t shown right away) to send it to us with the bill already attached.' },
     { q: 'Do you do wholesale?', a: 'Yes — AGP Crackers is a wholesale and retail dealer. Contact us directly by phone or WhatsApp for bulk pricing.' },
     { q: 'What if I don’t see WhatsApp in the share menu?', a: 'Tap "More" in the share menu to find it. Saving our number as a contact named "AGP Crackers" beforehand (there’s a quick link for this on the checkout page) makes it easier to pick us as the recipient.' },
-    { q: 'Where is AGP Crackers located?', a: 'Our shop is at 4/255, M. Meenatchipuram, Anaikootam Stop, Virudhunagar Main Road, Sivakasi - 626 005, Tamil Nadu. Call +91 97886 76576 or +91 89409 89788.' },
+    { q: 'Where is AGP Crackers located?', a: 'Our shop is at 4/255, Anaikootam Bus Stop, Petrol Bulk Back Side, Virudhunagar Main Road, SIVAKASI - 626 005, Tamil Nadu. Call +91 97886 76576 or +91 89409 89788.' },
     { q: 'What are your shop timings?', a: 'We are open Monday to Saturday, 9:30 AM to 7:00 PM. You can send a WhatsApp order at any time and we will reply during shop hours.' },
     { q: 'Where can I see the Sivakasi crackers price list for 2026?', a: 'Our full 2026 price list is on the Products page, with every item, pack size and price. Each category — sparklers, flower pots, chakkars, rockets, fancy shots, repeating shots, gift boxes and more — also has its own price list page.' },
     { q: 'What types of crackers do you sell?', a: 'We stock 110 items across 16 categories: sparklers, single sound crackers (Lakshmi, Kuruvi), bijili, ground chakkars, flower pots, twinkling stars, pencil torch, bombs, rockets, aerial fountains, fancy novelties, repeating shots, children crackers, new varieties, match boxes and gift boxes.' },

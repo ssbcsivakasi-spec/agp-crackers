@@ -17,7 +17,7 @@ window.SZ = (function () {
   const PHONE = '97886 76576';
   const PHONE2 = '89409 89788';
   const WHATSAPP = 'https://wa.me/919788676576';
-  const ADDRESS = '4/255, M. Meenatchipuram, Anaikootam Stop, Virudhunagar Main Road, Sivakasi - 626 005';
+  const ADDRESS = '4/255, Anaikootam Bus Stop, Petrol Bulk Back Side, Virudhunagar Main Road, SIVAKASI - 626 005.';
 
   /* Inline SVG icon set — no emoji anywhere on the site. */
   const ICONS = {
